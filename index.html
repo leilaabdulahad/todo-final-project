@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Your daily helper</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="to-do-items">
+          <h1>To Do List</h1>
+          <div class="row">
+            <form class="form">
+              <input type="text" id="input" placeholder="Enter your to do" />
+            </form>
+            <button type="button" id="btn">Post</button>
+          </div>
+          <div id="errorMessage"></div>
+          <ul id="out"></ul>
+        </div>
+      </div>
+      <!-- Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <p>Click done before deleting your to do</p>
+      </div>
+    </div>
+      <script src="script.js"></script>
 </body>
 </html>

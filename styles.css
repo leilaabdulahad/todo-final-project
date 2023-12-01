@@ -1,3 +1,146 @@
+
 *{
-    font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  box-sizing: border-box;
 }
+body{
+  margin: 0;
+  background: linear-gradient(135deg, #144057, #102937);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+#to-do-items {
+  width: 100%;
+  max-width: 540px;
+  margin: 100px;
+  padding: 40px 30px 70px;
+  border-radius: 24px;
+  background: #446169b7;
+  box-shadow: inset 13px 13px 16px #446169d4,
+            inset -13px -13px 16px #44616980;
+}
+h1{
+  text-align: center;
+  margin: 20px;
+  color: #000000;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+
+#btn{
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background: #f1d443;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.2rem;
+}
+ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted to space between */
+    background: #ece3ce;
+    margin: 20px auto;
+    padding: 10px 25px; /* Adjusted padding */
+    min-height: 45px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  ul li .text {
+    flex-grow: 1; 
+  }
+  ul li button.delete-btn {
+    background-color: rgba(218, 19, 19, 0.634);
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  ul li button.delete-btn:hover{
+      background-color: rgb(218, 19, 19);
+  }
+  ul li button.done-btn {
+    background-color: rgba(35, 140, 35, 0.705);
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  ul li button.done-btn:hover{
+    background-color: rgb(35, 140, 35);
+  }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: -10px; /* Adjusted margin to move it further up */
+    margin-top: -14px;  /* Adjusted margin to move it further up */
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #errorMessage{
+    color: rgb(194, 13, 13);
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+
+  
