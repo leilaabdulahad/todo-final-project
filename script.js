@@ -150,6 +150,5 @@ input.addEventListener('keypress', function (event) {
     addPost();
   }
 });
-
 addBtn.addEventListener('click', addPost);
 getPosts();
