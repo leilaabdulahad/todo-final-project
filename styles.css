@@ -63,10 +63,10 @@ ul li {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjusted to space between */
+    justify-content: space-between;
     background: #ece3ce;
     margin: 20px auto;
-    padding: 10px 25px; /* Adjusted padding */
+    padding: 10px 25px; 
     min-height: 45px;
     cursor: pointer;
     color: rgb(0, 0, 0);
@@ -128,8 +128,8 @@ ul li {
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    margin-right: -10px; /* Adjusted margin to move it further up */
-    margin-top: -14px;  /* Adjusted margin to move it further up */
+    margin-right: -10px; 
+    margin-top: -14px;  
   }
   .close:hover,
   .close:focus {
