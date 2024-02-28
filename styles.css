@@ -78,6 +78,7 @@ ul li {
   }
   ul li button.delete-btn {
     background-color: rgba(218, 19, 19, 0.634);
+    margin-right: 5px;
     color: #000000;
     border: none;
     padding: 5px 10px;
